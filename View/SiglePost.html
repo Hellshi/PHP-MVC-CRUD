@@ -1,0 +1,29 @@
+<section>
+    {% for post in posts %}
+    <article>
+
+        <header><h1>{{ post.titulo }}</h1></header>
+
+        <p>{{ post.conteudo }}</p>
+
+    </article>
+    {% endfor %}
+
+    
+    <section>
+
+        <h1>Coments Section</h1>
+
+            {% if comentarios == false %}
+                <p>Nada paver aqui não menó</p>
+            {% else %}
+                {% for comentario in comentarios %}
+                    <div class="coment">
+                            <h3>{{ comentario.nome }}</h3>
+                            <p>{{ comentario.conteudo }}</p>
+                            </div>
+                    </section>
+                {% endfor %}
+            {% endif %}
+
+</section>

@@ -1,0 +1,13 @@
+<div class="editar">
+    {% for postagem in postagens %}
+        <form method="POST" action="?pagina=admin&metodo=edit&id={{ postagem.id }}">
+            <span>Titulo</span><br>
+            <input type="text" name="titulo" value="{{postagem.titulo}}"><br><br>
+
+            <span>Conteudo</span><br>
+            <textarea name="conteudo" cols="30" rows="10">{{ postagem.conteudo }}</textarea><br><br>
+            
+            <input type="submit" name="acao" value="Enviar">
+        </form>
+    {% endfor %}
+</div>

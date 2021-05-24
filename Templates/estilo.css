@@ -1,0 +1,50 @@
+
+/*_______________________________________________INDEX______________________________*/
+
+.corpo {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.post {
+    border: 1px solid rgba(180, 180, 180, 0.233);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.post .content {
+    display: flex;
+    justify-content: center;
+    padding: 0px 25px 25px 25px;
+}
+
+.post:hover {
+    box-shadow: 0px 0px 20px rgba(63, 63, 63, 0.671);
+}
+
+.post p {
+    text-align: justify;
+    width: 80%;
+    line-height: 25px;
+    color: rgb(34, 34, 34);
+}
+
+.post h1 {
+    color: rgb(54, 54, 54);
+    text-align: center;
+}
+
+/*___________________________________________________SOBRE____________________________________________*/
+
+.corpo .sobre {
+    width: 50%;
+    text-align: justify;
+}

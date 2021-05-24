@@ -1,0 +1,7 @@
+{
+    "name": "your-vendor-name/package-name",
+    "description": "A short description of what your package does",
+    "require": {
+        "twig/twig": "^3.3"
+    }
+}

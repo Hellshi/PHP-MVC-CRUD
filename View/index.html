@@ -1,0 +1,14 @@
+
+    <section class="a">
+        {% for postagem in postagens %}
+            <article>
+                <header>
+                    <a href="http://localhost/CRUD/?pagina=post&id={{ postagem.id }}">
+                        {{ postagem.titulo }}
+                    </a>
+                </header>
+
+                <p>{{ postagem.conteudo }}</p>
+            </article>
+        {% endfor %}
+    </section>

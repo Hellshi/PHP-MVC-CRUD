@@ -1,0 +1,23 @@
+<div class="create">
+
+    <a href="http://localhost/CRUD/?pagina=admin&metodo=create">Criar novas publicações</a> <br/>
+    
+    <hr><br/>
+
+    
+        <table border="1">
+        {% for postagem in postagens %}
+            <tr>
+                <th>{{ postagem.id }}</th>
+                <th>{{ postagem.titulo }}</th>
+                <th>
+                    <a href="http://localhost/CRUD/?pagina=admin&metodo=editPage&id={{ postagem.id }}">Editar</a>
+                </th>
+                    <th>
+                        <a href="http://localhost/CRUD/?pagina=admin&metodo=delete&id={{ postagem.id }}">Deletar</a>
+                    </th>
+            </tr>
+        {% endfor %}
+        </table> <br/>
+   
+</div> 

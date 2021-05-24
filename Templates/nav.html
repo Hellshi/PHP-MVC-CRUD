@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    }
+
+    .nav {
+        margin: auto;
+        height: 7em;
+        width: 100%;
+        background-color: #DB8085;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 15px rgba(63, 63, 63, 0.671);
+    }
+
+    .nav a {
+        margin-top: 3%;
+        margin-left: 3%;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-weight: bold;
+        color: white;
+    }
+
+    .nav a:hover {
+        color: #DBCC95;
+    }
+
+    .content {
+        width: 80%;
+        margin: auto;
+        padding-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .a header{
+        text-align: center;
+    }
+
+    .create a { 
+        text-decoration: none;
+        color: rgba(63, 63, 63);
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .create a:hover {
+        color: #DBCC95;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="http://localhost/CRUD/">Home</a>
+        <a href="http://localhost/CRUD/?pagina=sobre">Sobre</a>
+        <a href="http://localhost/CRUD/?pagina=admin">Admin</a>
+    </div>
+
+    <div class="content">
+        conteudo
+    </div>
+    
+</body>
+</html>
